@@ -1,0 +1,51 @@
+.submission{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5d109;
+}
+.submission__form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2rem 3rem;
+    background-color: #fff ;
+}
+
+.submission__title{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+label{
+    color: gray;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgb(48, 46, 46);
+    padding: .5rem 0;
+    font-size: 18px;
+}
+
+
+.submission__form-button{
+    margin-top: 1.5rem;
+    padding: 1rem 0 ;
+    border-radius: 1.25rem;
+    background-color: #f5d109;
+    border: none;
+}
+.submission__rating{
+    text-align: center;
+    padding: .5rem 0;
+}
+.submission__rating-container{
+    padding: 1.5rem 0;
+}

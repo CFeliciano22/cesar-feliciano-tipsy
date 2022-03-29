@@ -1,0 +1,88 @@
+// body{
+//     background: linear-gradient(
+//         to right,
+//         #fefefa 0%,
+//         #fefefa 50%,
+//         #f5d109 50%,
+//         #f5d109 100%
+//     );
+// }
+.signup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+            to right,
+            #fefefa 0%,
+            #fefefa 50%,
+            #f5d109 50%,
+            #f5d109 100%
+            
+        );
+}
+
+.signup__header{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.signup__form-container{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.signup__form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2rem;
+}
+
+.signup__title{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+label{
+    color: gray;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgb(48, 46, 46);
+    padding: .5rem 0;
+    font-size: 18px;
+}
+.signup__form--login{
+    padding-top: 3rem;
+}
+
+.signup__form-button{
+    margin-top: 1.5rem;
+    padding: 1rem 0 ;
+    border-radius: 1.25rem;
+    background-color: #f5d109;
+    border: none;
+}
+
+.signup__header--img{
+    width: 300px;
+    padding-bottom: 2rem;
+    
+}
+.signup__header--slogan{
+    font-size: 2rem;
+
+}
+.signup__header--title{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}

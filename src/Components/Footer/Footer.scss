@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5d109;
+    padding: 3rem 2rem;
+}
+.footer__contact{
+    display: flex;
+}
+
+.footer__links--icons{
+    height: 1.875rem;
+    padding-right: 1rem;
+}
+.footer__contact--info{
+    padding-right: 1rem;
+}
