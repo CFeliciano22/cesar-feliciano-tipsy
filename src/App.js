@@ -7,18 +7,19 @@ import Signup from './Components/Signup/Signup';
 import Submission from './Components/Submission/Submission';
 import Footer from './Components/Footer/Footer';
 import Maps from './Components/Map/Maps';
+import Featured from './Components/Featured/Featured';
 
 function App() {
   return (
     <BrowserRouter>
     {/* <Header/> */}
-    {/* <Maps/> */}
-    <Signin/>
+    {/* <Route path='/maps/:id' component={Maps}/> */}
+    {/* <Signin/> */}
     {/* <Signup/> */}
     {/* <Submission/> */}
     {/* <Footer/> */}
+    <Featured/>
     </BrowserRouter>
   );
   }
-
 export default App;
