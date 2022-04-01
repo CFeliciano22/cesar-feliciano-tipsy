@@ -21,7 +21,7 @@ export default class Maps extends Component {
             .then(response => {
                 console.log(response.data)
                 this.setState({
-                    currentRest: response.data
+                    currentRestaurant: response.data
                 })
             })
             .catch(err => console.log(err))
@@ -45,8 +45,7 @@ export default class Maps extends Component {
             this.getRestaurantbyId(restaurantId)
         }
     }
-
-
+    
     render(){
         if(this.state.restaurants === []){
             return "Loading..."
@@ -59,7 +58,7 @@ export default class Maps extends Component {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
         {this.state.restaurants.map(res =>(
-            <Marker key={res.id} position={[
+            <Link to={`/map/${res.id}`} ><Marker key={res.id} position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
                 ]} >
@@ -75,13 +74,25 @@ export default class Maps extends Component {
                 
                 </Popup>
  
-            </Marker>
+            </Marker></Link>
         ))}
 
         </MapContainer>
-
+        <div className='restaurant'>
+        <div className='restaurant-card'>
+        <div>
+        <h2 className='restaurant-card__name'>{this.state.currentRestaurant.name}</h2>
+        {/* <p>{this.state.currentRestaurant.location}</p> */}
+        <p className='restaurant-card__phone'>{this.state.currentRestaurant.display_phone}</p>
+        <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
         </div>
-        
+        <div>
+        <img className='restaurant-card__image' src={this.state.currentRestaurant.image_url} alt='yelp img'/>
+        <p className='restaurant-card__hh'>Happy Hour .... {this.state.currentRestaurant.happyhour}</p>
+        </div>
+        </div>
+        </div>
+        </div>
     )
 }
 }

@@ -47,7 +47,8 @@
             },
             "phone": "+19545443370",
             "display_phone": "(954) 544-3370",
-            "distance": 2079.833589000337
+            "distance": 2079.833589000337,
+            "happyhour": "Mon-Fri 4pm-7pm"
         },
         {
             "id": "Lo4X3oxqQNLq4ZshPOFlfA",
@@ -93,7 +94,8 @@
             },
             "phone": "+19543749072",
             "display_phone": "(954) 374-9072",
-            "distance": 2687.1382132153967
+            "distance": 2687.1382132153967,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "_FIWvO4yxRA9KdFKwawGIQ",
@@ -142,7 +144,8 @@
             },
             "phone": "+19543999241",
             "display_phone": "(954) 399-9241",
-            "distance": 1711.104789277568
+            "distance": 1711.104789277568,
+            "happyhour": "Tues-Fri 4pm-7pm"
         },
         {
             "id": "7TzawonQb79u6wWNu9t2Dw",
@@ -190,7 +193,8 @@
             },
             "phone": "+19549297030",
             "display_phone": "(954) 929-7030",
-            "distance": 4139.119948534868
+            "distance": 4139.119948534868,
+            "happyhour": "Mon-Fri 3:30pm-6:30pm"
         },
         {
             "id": "jd2sqoKc3twR-ZDwaaF-2w",
@@ -231,7 +235,8 @@
             },
             "phone": "+19544564550",
             "display_phone": "(954) 456-4550",
-            "distance": 1671.7081738675608
+            "distance": 1671.7081738675608,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "Wf5iB-ZuK6A3U6eL3WvXDw",
@@ -280,7 +285,8 @@
             },
             "phone": "+17547777255",
             "display_phone": "(754) 777-7255",
-            "distance": 629.6118645590353
+            "distance": 629.6118645590353,
+            "happyhour": "Everyday 4pm-6pm"
         },
         {
             "id": "rd0u4-yh11Yz2ytNpfsL3w",
@@ -322,7 +328,8 @@
             },
             "phone": "+17542633084",
             "display_phone": "(754) 263-3084",
-            "distance": 196.249970699071
+            "distance": 196.249970699071,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "pbPC3IAnKnbuZfS_Nz3Alw",
@@ -370,7 +377,8 @@
             },
             "phone": "+19544573700",
             "display_phone": "(954) 457-3700",
-            "distance": 830.3792876809352
+            "distance": 830.3792876809352,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "q9hY3kOSN9mPcJaBkKa36w",
@@ -415,7 +423,8 @@
             },
             "phone": "+19547432948",
             "display_phone": "(954) 743-2948",
-            "distance": 797.7631025899535
+            "distance": 797.7631025899535,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "SZtx_zQsVwcmJi5zxWlrKg",
@@ -459,7 +468,8 @@
             },
             "phone": "+19542713222",
             "display_phone": "(954) 271-3222",
-            "distance": 2363.2797954272955
+            "distance": 2363.2797954272955,
+            "happyhour": "Mon-Fri 5:30pm-7pm"
         },
         {
             "id": "auShRKAahpVMJPZSpaTkNw",
@@ -508,7 +518,8 @@
             },
             "phone": "+17542633436",
             "display_phone": "(754) 263-3436",
-            "distance": 4589.185300177701
+            "distance": 4589.185300177701,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "HqHzThj7y9FBF1Txtrcy4g",
@@ -557,7 +568,8 @@
             },
             "phone": "+19544568878",
             "display_phone": "(954) 456-8878",
-            "distance": 482.3020511647738
+            "distance": 482.3020511647738,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "1QHm23wqyx2NWlIL2LyJJA",
@@ -598,7 +610,8 @@
             },
             "phone": "+19543627627",
             "display_phone": "(954) 362-7627",
-            "distance": 2854.484382694913
+            "distance": 2854.484382694913,
+            "happyhour": "Tues-Fri 5pm-7pm Drinks Only"
         },
         {
             "id": "8kja0HPODA__6zogMLWaDw",
@@ -644,7 +657,8 @@
             },
             "phone": "+19549827664",
             "display_phone": "(954) 982-7664",
-            "distance": 997.1514154775997
+            "distance": 997.1514154775997,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "yA1CZ5Dip8cyfL40JGV_4w",
@@ -692,7 +706,8 @@
             },
             "phone": "+13059317401",
             "display_phone": "(305) 931-7401",
-            "distance": 4729.486593259078
+            "distance": 4729.486593259078,
+            "happyhour": "Mon-Fri 3pm-7pm"
         },
         {
             "id": "z_xdviHlIhcprL2iAvYIqg",
@@ -737,7 +752,8 @@
             },
             "phone": "+19544579394",
             "display_phone": "(954) 457-9394",
-            "distance": 1029.795497901425
+            "distance": 1029.795497901425,
+            "happyhour": "Mon-Fri 4pm-7pm"
         },
         {
             "id": "zbbXtnUAYTim4b1nxVCGrg",
@@ -786,7 +802,8 @@
             },
             "phone": "+17548165606",
             "display_phone": "(754) 816-5606",
-            "distance": 2844.3059775056286
+            "distance": 2844.3059775056286,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "DX_7O0DZ6WM4N5Y1qdoDsA",
@@ -834,7 +851,8 @@
             },
             "phone": "+19544582566",
             "display_phone": "(954) 458-2566",
-            "distance": 82.457530811096
+            "distance": 82.457530811096,
+            "happyhour": "Everynight 9pm-Close"
         },
         {
             "id": "2VCUzNVrykIRKcorVX4u1A",
@@ -874,7 +892,8 @@
             },
             "phone": "+19545891796",
             "display_phone": "(954) 589-1796",
-            "distance": 2666.8003100091673
+            "distance": 2666.8003100091673,
+            "happyhour": "No Happy Hour"
         },
         {
             "id": "niMAmcUhY4XpC8Ouh7pMvg",
@@ -924,6 +943,7 @@
             },
             "phone": "+17542633294",
             "display_phone": "(754) 263-3294",
-            "distance": 1028.2407439263286
+            "distance": 1028.2407439263286,
+            "happyhour": "No Happy Hour"
         }
     ]

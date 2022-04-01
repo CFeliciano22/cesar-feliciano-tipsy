@@ -13,12 +13,12 @@ function App() {
   return (
     <BrowserRouter>
     {/* <Header/> */}
-    {/* <Route path='/maps/:id' component={Maps}/> */}
+    <Route path='/map/:id' component={Maps}/>
     {/* <Signin/> */}
     {/* <Signup/> */}
-    {/* <Submission/> */}
+    {/* <Route path='/submission' exact component={Submission} /> */}
     {/* <Footer/> */}
-    <Featured/>
+    {/* <Featured/> */}
     </BrowserRouter>
   );
   }

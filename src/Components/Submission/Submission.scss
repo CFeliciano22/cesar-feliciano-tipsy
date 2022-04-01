@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5d109;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 .submission__form{
     display: flex;
@@ -13,6 +14,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 2rem 3rem;
     background-color: #fff ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .submission__title{
@@ -39,7 +42,7 @@ input{
     margin-top: 1.5rem;
     padding: 1rem 0 ;
     border-radius: 1.25rem;
-    background-color: #f5d109;
+    background-color: darkgray;
     border: none;
 }
 .submission__rating{
