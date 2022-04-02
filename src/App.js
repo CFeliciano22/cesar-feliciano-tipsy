@@ -12,13 +12,11 @@ import Featured from './Components/Featured/Featured';
 function App() {
   return (
     <BrowserRouter>
-    <Header/>
-    {/* <Route path='/map/:id' component={Maps}/> */}
-    {/* <Signin/> */}
-    {/* <Signup/> */}
-    {/* <Route path='/submission' exact component={Submission} /> */}
-    {/* <Footer/> */}
-    {/* <Featured/> */}
+    <Route path='/map/:id' component={Maps}/>
+    <Route path={['/','/signin']} exact component={Signin}/>{/* <Signin/> */}
+    <Route path='/signup' component={Signup}/>{/* <Signup/> */}
+    <Route path='/submission' exact component={Submission} />
+    <Route path='/featured' exact component={Featured} />{/* <Featured/> */}
     </BrowserRouter>
   );
   }

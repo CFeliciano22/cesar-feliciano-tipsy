@@ -1,10 +1,14 @@
+.submission-container{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
 .submission{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    // background-color: #000000;
+    // background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 .submission__form{
     display: flex;
@@ -42,8 +46,9 @@ input{
     margin-top: 1.5rem;
     padding: 1rem 0 ;
     border-radius: 1.25rem;
-    background-color: darkgray;
+    background-color: #256ce1;
     border: none;
+    color: #fff;
 }
 .submission__rating{
     text-align: center;

@@ -4,10 +4,14 @@ import Etaru1 from '../../assets/images/etaru1.jpeg'
 import Etaru2 from '../../assets/images/etaru2.jpeg'
 import Etaru3 from '../../assets/images/etaru3.jpeg'
 import Etaru4 from '../../assets/images/etaru4.jpeg'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 export default function Featured(){
 
     return(
+        <div className='featured-page'>
+         <Header/>
         <div className='featured'>
         <h1 className='featured__restaurant-name'>Etaru</h1>
         <div className='featured-container'>
@@ -57,6 +61,8 @@ export default function Featured(){
                 </div>
             </div>
         </div>
+        </div>
+        <Footer/>
         </div>
     )
 }

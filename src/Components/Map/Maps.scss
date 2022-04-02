@@ -1,6 +1,10 @@
+.map{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
 .map__container{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 
 .active__name{
@@ -16,8 +20,8 @@
 }
 
 .restaurant{
-    background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    // background-color: #000000;
+    // background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
     padding: 2rem 8rem;
 }
 
@@ -45,4 +49,8 @@
 }
 .restaurant-card__phone{
     padding-bottom: .5rem;
+}
+
+.restaurant-card__address{
+    padding-bottom: 8px;
 }

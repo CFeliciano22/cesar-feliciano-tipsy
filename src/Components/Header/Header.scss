@@ -3,7 +3,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .nav{
-    background-color: #000;
+    // background-color: #000;
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -44,4 +44,11 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+}
+
+.nav__title{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }

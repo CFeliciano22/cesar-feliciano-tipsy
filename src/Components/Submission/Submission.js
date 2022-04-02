@@ -1,10 +1,11 @@
 import './Submission.scss'
 import Rating from '../Rating/Rating';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 export default function Submission(){
     return(
-        <>
-        {/* <Header/> */}
+        <div className='submission-container'>
+        <Header/>
         <div className='submission'>
             <form className='submission__form'>
                 <h3 className='submission__title'>Restaurant Submissions</h3>
@@ -24,6 +25,7 @@ export default function Submission(){
                 <button className='submission__form-button' type='submit'>Submit</button>
             </form>
         </div>
-        </>
+        <Footer/>
+        </div>
     )
 }

@@ -1,21 +1,28 @@
+.featured-page{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
 .featured{
     padding: 2rem 3.75rem;
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #414141 74%); 
+    // background-color: #000000;
+    // background-image: linear-gradient(315deg, #000000 0%, #414141 74%); 
 }
 
 .featured-container{
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
+    color: #fff;
 }
 .featured__restaurant-name{
     font-size: 3.75rem;
     border-bottom: 2px solid darkgray; 
     padding-bottom: 1.5rem;
+    color: #fff;
 }
 .featured__restaurant--content{
     padding-bottom: 8px;
+    color: #fff;
 }
 .featured__images{
     width: 20rem;

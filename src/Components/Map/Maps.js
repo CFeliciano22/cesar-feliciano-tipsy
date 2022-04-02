@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import React, { Component, useEffect } from 'react';
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import {Icon} from 'leaflet';
 import './Maps.scss'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Featured from '../Featured/Featured';
-import { Redirect } from 'react-router-dom';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Martini from '../../assets/Icons/martini icon gl.png'
 
 
 const Url = "http://localhost:5000/restaurants/";
@@ -53,6 +54,7 @@ export default class Maps extends Component {
     // // console.log(`/maps/${id}`)
     // // return <Redirect push to={`/map/${id}`}/>
     // }
+  
 
     
     render(){
@@ -62,7 +64,8 @@ export default class Maps extends Component {
         
 
     return(
-        <div>
+        <div className='map'>
+        <Header/>
         <MapContainer className='map__container' center={[25.987219, -80.153206]} zoom={14}>
             <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -72,7 +75,7 @@ export default class Maps extends Component {
             <Link to={`/map/${res.id}`} ><Marker key={res.id} position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
-                ]}  >
+                ]} >
                 {/* eventHandlers={{
                      click: ()=>{
                          this.handleClick(res.id)
@@ -92,13 +95,13 @@ export default class Maps extends Component {
  
             </Marker></Link>
         ))}
-
+        
         </MapContainer>
         <div className='restaurant'>
         <div className='restaurant-card'>
         <div>
         <h2 className='restaurant-card__name'>{this.state.currentRestaurant.name}</h2>
-        <p>{this.state.currentRestaurant.location.display_address}</p>
+        <p className='restaurant-card__address'>{this.state.currentRestaurant.location.display_address}</p> 
         <p className='restaurant-card__phone'>{this.state.currentRestaurant.display_phone}</p>
         <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
         </div>
@@ -108,6 +111,7 @@ export default class Maps extends Component {
         </div>
         </div>
         </div>
+        <Footer/>
         </div>
     )
 }

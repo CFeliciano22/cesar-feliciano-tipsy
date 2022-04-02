@@ -15,7 +15,7 @@ export default function Signup (){
                 <label for='password'>Password</label>
                 <input type='password' name='password' />
                 <button className='signup__form-button' type='submit'>Sign Up</button>
-                <p className='signup__form--login'>Already have account? <Link to='/sign-in'>Sign In</Link></p>
+                <p className='signup__form--login'>Already have account? <Link to='/signin'>Sign In</Link></p>
             </form>
         </div>
         <div className='signup__header'>
