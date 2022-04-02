@@ -1,23 +1,19 @@
 import './Header.scss'
-import { Link } from 'react-router-dom';
+import { NavLink, Link} from 'react-router-dom';
 
 
 export default function Header (){
     return(
-        <nav>
-            <h1>Tipsy</h1>
-            <img src='' alt=''/>
-            <ul>
-                <Link to='/'><li>Home</li></Link>
-                <Link to='/featured'><li>Featured</li></Link>
-                <Link to='/submissions'><li>Submissions</li></Link>
-                <Link to='about-us'><li>About Us</li></Link>
-                <Link to='contact-us'><li>Contact Us</li></Link>
-            </ul>
-                
-                <button type='submit'> Log in</button>
-                <button type='submit'>Sign up</button>
-           
+        <nav className='nav'>
+            <h1>Hello</h1>
+        <div className='nav__menu'>
+            <NavLink className='nav__link' to='/featured'>Featured</NavLink>
+            <NavLink className='nav__link' to='/submission'>Submissions</NavLink>
+            <NavLink className='nav__link' to='/about'>About</NavLink>
+            <NavLink className='nav__link' to='/contact'>Contact</NavLink>
+            <Link className='nav__button' to='/signin'><button className='nav-button'>Sign In</button></Link>
+            <Link className='nav__button' to='/signup'><button className='nav-button'>Sign Up</button></Link>
+        </div>  
         </nav>
     )
 }

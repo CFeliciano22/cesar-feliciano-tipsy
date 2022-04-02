@@ -5,6 +5,7 @@ import './Maps.scss'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Featured from '../Featured/Featured';
+import { Redirect } from 'react-router-dom';
 
 
 const Url = "http://localhost:5000/restaurants/";
@@ -45,11 +46,21 @@ export default class Maps extends Component {
             this.getRestaurantbyId(restaurantId)
         }
     }
+
+    // handleClick=(id)=>{
+    // //   window.location.href="/map/"+id
+    //    this.props.history.push(`/map/${id}`)
+    // // console.log(`/maps/${id}`)
+    // // return <Redirect push to={`/map/${id}`}/>
+    // }
+
     
     render(){
-        if(this.state.restaurants === []){
+        if(this.state.restaurants === [] || this.state.currentRestaurant.location === undefined){
             return "Loading..."
         }
+        
+
     return(
         <div>
         <MapContainer className='map__container' center={[25.987219, -80.153206]} zoom={14}>
@@ -61,7 +72,12 @@ export default class Maps extends Component {
             <Link to={`/map/${res.id}`} ><Marker key={res.id} position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
-                ]} >
+                ]}  >
+                {/* eventHandlers={{
+                     click: ()=>{
+                         this.handleClick(res.id)
+                     }
+                     }} */}
                 <Popup position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
@@ -82,7 +98,7 @@ export default class Maps extends Component {
         <div className='restaurant-card'>
         <div>
         <h2 className='restaurant-card__name'>{this.state.currentRestaurant.name}</h2>
-        {/* <p>{this.state.currentRestaurant.location}</p> */}
+        <p>{this.state.currentRestaurant.location.display_address}</p>
         <p className='restaurant-card__phone'>{this.state.currentRestaurant.display_phone}</p>
         <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
         </div>

@@ -12,8 +12,8 @@ import Featured from './Components/Featured/Featured';
 function App() {
   return (
     <BrowserRouter>
-    {/* <Header/> */}
-    <Route path='/map/:id' component={Maps}/>
+    <Header/>
+    {/* <Route path='/map/:id' component={Maps}/> */}
     {/* <Signin/> */}
     {/* <Signup/> */}
     {/* <Route path='/submission' exact component={Submission} /> */}
