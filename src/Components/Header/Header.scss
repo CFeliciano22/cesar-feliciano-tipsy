@@ -2,6 +2,9 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 
+body{
+    font-family: Titillium;
+}
 .nav{
     // background-color: #000;
     height: 5rem;

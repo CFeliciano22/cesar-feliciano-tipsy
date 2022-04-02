@@ -6,6 +6,7 @@ import Etaru3 from '../../assets/images/etaru3.jpeg'
 import Etaru4 from '../../assets/images/etaru4.jpeg'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Comments from '../Comments/Comments'
 
 export default function Featured(){
 
@@ -24,6 +25,7 @@ export default function Featured(){
                 <p className='featured__restaurant--content'>Drinks<Rating/></p>
                 <p className='featured__restaurant--content'>Food<Rating/></p>
                 <p className='featured__restaurant--content'>Vibes<Rating/></p>
+                <Comments/>
             </div>
             <div className='featured__content'>
                 <div className='featured__images-container'>

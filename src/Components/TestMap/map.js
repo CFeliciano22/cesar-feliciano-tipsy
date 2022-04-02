@@ -1,33 +1,24 @@
 import React, { Component, useEffect } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import {Icon} from 'leaflet';
-import './Maps.scss'
+import '../Map/Maps.scss'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import Martini from '../../assets/Icons/martini icon gl.png'
 import { SearchControl, OpenStreetMapProvider } from 'react-leaflet-geosearch';
+
+
 
 const Url = "http://localhost:5000/restaurants/";
 
 export default class Maps extends Component {
     state = {
         restaurants: [],
-        currentRestaurant: {}
+        
     }
 
-    getRestaurantbyId = (id) => {
-        axios
-            .get (`${Url}${id}`)
-            .then(response => {
-                console.log(response.data)
-                this.setState({
-                    currentRestaurant: response.data
-                })
-            })
-            .catch(err => console.log(err))
-    }
+   
     componentDidMount(){
         axios.get(Url).then((response) =>{
             console.log(response.data)
@@ -35,34 +26,16 @@ export default class Maps extends Component {
                 restaurants: response.data,
                 
             })
-            const restaurantId = this.props.match.params.id || response.data[0].id
-            this.getRestaurantbyId(restaurantId);
+            
         })
     }
-
-    componentDidUpdate(prevProps,prevState){
-        const restaurantId =  this.props.match.params.id || this.state.restaurants[0].id 
-        console.log(restaurantId)
-        if (prevState.currentRestaurant && prevState.currentRestaurant.id !== restaurantId){
-            this.getRestaurantbyId(restaurantId)
-        }
-    }
-
-    // handleClick=(id)=>{
-    // //   window.location.href="/map/"+id
-    //    this.props.history.push(`/map/${id}`)
-    // // console.log(`/maps/${id}`)
-    // // return <Redirect push to={`/map/${id}`}/>
-    // }
-  
-
-    
     render(){
-        if(this.state.restaurants === [] || this.state.currentRestaurant.location === undefined){
+        if(this.state.restaurants === []){
             return "Loading..."
         }
         const prov = OpenStreetMapProvider();
         const GeoSearchControlElement = SearchControl;
+        
 
     return(
         <div className='map'>
@@ -77,11 +50,6 @@ export default class Maps extends Component {
                 res.coordinates.latitude,
                 res.coordinates.longitude
                 ]} >
-                {/* eventHandlers={{
-                     click: ()=>{
-                         this.handleClick(res.id)
-                     }
-                     }} */}
                 <Popup position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
@@ -109,20 +77,6 @@ export default class Maps extends Component {
           popupFormat={({ query, result }) => result.label}
         />
         </MapContainer>
-        <div className='restaurant'>
-        <div className='restaurant-card'>
-        <div>
-        <h2 className='restaurant-card__name'>{this.state.currentRestaurant.name}</h2>
-        <p className='restaurant-card__address'>{this.state.currentRestaurant.location.display_address}</p> 
-        <p className='restaurant-card__phone'>{this.state.currentRestaurant.display_phone}</p>
-        <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
-        </div>
-        <div>
-        <img className='restaurant-card__image' src={this.state.currentRestaurant.image_url} alt='yelp img'/>
-        <p className='restaurant-card__hh'>Happy Hour .... {this.state.currentRestaurant.happyhour}</p>
-        </div>
-        </div>
-        </div>
         <Footer/>
         </div>
     )
