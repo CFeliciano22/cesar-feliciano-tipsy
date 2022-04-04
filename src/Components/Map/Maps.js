@@ -6,8 +6,12 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import Martini from '../../assets/Icons/martini icon gl.png'
 import { SearchControl, OpenStreetMapProvider } from 'react-leaflet-geosearch';
+
+const martini = new Icon({
+    iconUrl: require('../../assets/Icons/new-martini.jpeg'),
+    iconSize: [40, 40]
+})
 
 const Url = "http://localhost:5000/restaurants/";
 
@@ -76,7 +80,7 @@ export default class Maps extends Component {
             <Link to={`/map/${res.id}`} ><Marker key={res.id} position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
-                ]} >
+                ]} icon={martini} >
                 {/* eventHandlers={{
                      click: ()=>{
                          this.handleClick(res.id)

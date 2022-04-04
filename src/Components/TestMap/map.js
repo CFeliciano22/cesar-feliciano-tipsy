@@ -8,16 +8,17 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { SearchControl, OpenStreetMapProvider } from 'react-leaflet-geosearch';
 
-
+const martini = new Icon({
+    iconUrl: require('../../assets/Icons/new-martini.jpeg'),
+    iconSize: [40, 40]
+})
 
 const Url = "http://localhost:5000/restaurants/";
 
 export default class Maps extends Component {
     state = {
         restaurants: [],
-        
     }
-
    
     componentDidMount(){
         axios.get(Url).then((response) =>{
@@ -29,6 +30,8 @@ export default class Maps extends Component {
             
         })
     }
+
+
     render(){
         if(this.state.restaurants === []){
             return "Loading..."
@@ -49,7 +52,7 @@ export default class Maps extends Component {
             <Link to={`/map/${res.id}`} ><Marker key={res.id} position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
-                ]} >
+                ]} icon={martini}>
                 <Popup position={[
                 res.coordinates.latitude,
                 res.coordinates.longitude
