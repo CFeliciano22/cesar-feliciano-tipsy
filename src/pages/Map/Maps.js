@@ -4,8 +4,8 @@ import {Icon} from 'leaflet';
 import './Maps.scss'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import { SearchControl, OpenStreetMapProvider } from 'react-leaflet-geosearch';
 
 const martini = new Icon({
@@ -116,14 +116,15 @@ export default class Maps extends Component {
         <div className='restaurant'>
         <div className='restaurant-card'>
         <div>
+        <img className='restaurant-card__image' src={this.state.currentRestaurant.image_url} alt='yelp img'/>
+        </div>
+        <div>
+        
         <h2 className='restaurant-card__name'>{this.state.currentRestaurant.name}</h2>
         <p className='restaurant-card__address'>{this.state.currentRestaurant.location.display_address}</p> 
         <p className='restaurant-card__phone'>{this.state.currentRestaurant.display_phone}</p>
-        <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
-        </div>
-        <div>
-        <img className='restaurant-card__image' src={this.state.currentRestaurant.image_url} alt='yelp img'/>
         <p className='restaurant-card__hh'>Happy Hour .... {this.state.currentRestaurant.happyhour}</p>
+        <p className='restaurant-card__rating'>Overall rating: {this.state.currentRestaurant.rating}</p>
         </div>
         </div>
         </div>

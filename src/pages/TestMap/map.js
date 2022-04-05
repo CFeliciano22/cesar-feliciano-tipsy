@@ -4,8 +4,8 @@ import {Icon} from 'leaflet';
 import './map.scss';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import { SearchControl, OpenStreetMapProvider } from 'react-leaflet-geosearch';
 
 const martini = new Icon({
@@ -43,7 +43,7 @@ export default class Maps extends Component {
     return(
         <div className='map'>
         <Header/>
-        <MapContainer className='map__container' center={[25.987219, -80.153206]} zoom={14}>
+        <MapContainer className='map__container--map' center={[25.987219, -80.153206]} zoom={14}>
             <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

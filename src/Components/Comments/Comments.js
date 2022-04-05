@@ -16,16 +16,7 @@ export default function Comments (){
             </form>
             </div>
         </div>
-       {/* //create comments section */}
-       <div className='comments__container--comments'>
-              <div className='comments__container--comments--comment'>
-                    <div className='comments__container--comments--comment--header'>
-                        <h3 className='comments__container--comments--comment--header--name'>Name</h3>
-                        <p className='comments__container--comments--comment--header--date'>Date</p>
-                    </div>
-                    <p className='comments__container--comments--comment--comment'>Leave a comment</p>
-                </div>
-                </div>
+       
     </>
     )
 }

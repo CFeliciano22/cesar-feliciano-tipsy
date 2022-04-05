@@ -1,7 +1,7 @@
 import './Submission.scss'
-import Rating from '../Rating/Rating';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Rating from '../../Components/Rating/Rating';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 export default function Submission(){
     return(
         <div className='submission-container'>

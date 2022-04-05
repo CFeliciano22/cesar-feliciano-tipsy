@@ -1,12 +1,12 @@
 import './Featured.scss'
-import Rating from '../Rating/Rating'
+import Rating from '../../Components/Rating/Rating'
 import Etaru1 from '../../assets/images/etaru1.jpeg'
 import Etaru2 from '../../assets/images/etaru2.jpeg'
 import Etaru3 from '../../assets/images/etaru3.jpeg'
 import Etaru4 from '../../assets/images/etaru4.jpeg'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import Comments from '../Comments/Comments'
+import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
+import Comments from '../../Components/Comments/Comments'
 
 export default function Featured(){
 
