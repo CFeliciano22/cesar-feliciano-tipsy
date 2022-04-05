@@ -1,7 +1,7 @@
 import React, { Component, useEffect } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import {Icon} from 'leaflet';
-import '../Map/Maps.scss'
+import './map.scss';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
