@@ -39,9 +39,9 @@ export default function Featured(){
                 <div className='featured__happyhour'>
                 <h2 className='featured__happyhour--title'>Happy Hour</h2>
                 <p className='featured__restaurant--content'>Everyday</p>
-                <p className='featured__restaurant--content'>4pm-7pm only at the bar </p>
+                <p className='featured__restaurant--content'>5:30pm-7pm only at the bar </p>
                 </div>
-                <div>
+                <div className='featured__restaurant--hh'>
                     <h2>Menu</h2>
                     <h3>Signature Cocktails $8</h3>
                     <p>Rita Okinawa - (Spicy margarita)</p>

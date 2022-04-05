@@ -6,7 +6,6 @@ export default function Header (){
     return(
         <nav className='nav'>
         <Link to='/'><img className='nav__image' src={require('../../assets/images/tipsy-logo.jpeg')} alt='logo'/></Link>
-            
         <div className='nav__menu'>
             <NavLink className='nav__link' to='/'>Home</NavLink>
             <NavLink className='nav__link' to='/featured'>Featured</NavLink>

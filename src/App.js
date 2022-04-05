@@ -15,6 +15,7 @@ import Comments from './Components/Comments/Comments';
 function App() {
   return (
     <BrowserRouter>
+   
     {/* <Comments/> */}
     <Route path={['/','/map']} exact component={Map}/>
     <Route path='/map/:id' component={Maps}/>

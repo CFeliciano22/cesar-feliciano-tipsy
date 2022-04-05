@@ -20,7 +20,7 @@ export default function Footer(){
         </div>
         <div className='footer__contact'>
         <p className='footer__contact--info'><FontAwesomeIcon icon={faPhone} color='#4682B4'/> 305.777.7777</p>
-        <p className='footer__contact--info'><FontAwesomeIcon icon={faMailBulk} color='#4682B4'/> Cesar@Tipsy.com</p>
+        <p className='footer__contact--info'><FontAwesomeIcon icon={faMailBulk} color='#4682B4'/> Webdevcez@gmail.com</p>
         </div>
         </div>
     )

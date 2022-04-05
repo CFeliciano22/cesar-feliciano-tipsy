@@ -17,7 +17,7 @@ export default function Signin(){
                 <input type='email' name='email' />
                 <label for='password'>Password</label>
                 <input type='password' name='password' />
-                <button className='login__form-button' type='submit'>Sign In</button>
+                <Link to='/'><button className='login__form-button' type='submit'>Sign In</button></Link>
                 <p className='login__form--signup'>Dont have account? <Link to='/signup'>Sign Up</Link></p>
             </form>
            
