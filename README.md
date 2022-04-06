@@ -21,9 +21,9 @@ once logged in a user will be directed to the map with initial location. The map
 
 Install the dependencies using npm install
 
-Cd into Client and run 'npm start'
+cd into Client and run 'npm start'
 
-Cd into Server and run 'npm run devStart'
+cd into Server and run 'npm run devStart'
 
 App should be up and running
 
