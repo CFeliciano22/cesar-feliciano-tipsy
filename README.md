@@ -12,10 +12,10 @@ once logged in a user will be directed to the map with initial location. The map
 
 ## Features
 
-Mapping
-Personalize approach to planning a night out with company
-Easy Accessibility
-User friendly interface
+- Mapping
+- Personalize approach to planning a night out with company
+- Easy Accessibility
+- User friendly interface
 
 ## Installation
 
