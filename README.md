@@ -5,10 +5,10 @@ Tipsy is a web application that allows users to locate the nearest happy hour to
 once logged in a user will be directed to the map with initial location. The map will be centered to a default location with restaurants listed and choice of happy hours and times.
 
 
-![maps page](/src/assets/images/screenshot.png)
+![maps page](/Client/src/assets/images/screenshot.png)
 
 
-![featured page](/src/assets/images/screenshot2.png)
+![featured page](/Client/src/assets/images/screenshot2.png)
 
 ## Features
 
